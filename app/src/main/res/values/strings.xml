@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MediCare</string>
+    <string name="skip">Skip</string>
+    <string name="heading_onboarding_first">Selamat datang di Medicare</string>
+    <string name="body_onboarding_first">Akses cepat informasi medis, identifikasi obat, dan pencarian gejala. Mari mulai untuk menyederhanakan kebutuhan kesehatan Anda</string>
+    <string name="heading_onboarding_second">Cari Obat dengan Mudah</string>
+    <string name="body_onboarding_second">Mudah menemukan obat berdasarkan namanya atau menjelajahi berdasarkan gejala tertentu. Kekuatan pengetahuan di ujung jari Anda.</string>
+    <string name="heading_onboarding_third">Temukan Obat</string>
+    <string name="body_onboarding_third">Gunakan kamera ponsel Anda untuk mengidentifikasi pil atau obat yang tidak dikenal. Tangkap, temukan, dan tetap terinformasi untuk kesejahteraan Anda.</string>
+    <string name="detect_with_image">Deteksi obat dengan gambar</string>
+    <string name="detect_with_text">Cari obat</string>
+    <string name="searchbar_hint">Ketik nama obat atau gejala</string>
+    <string name="medicine_name">Nama obat</string>
+    <string name="medicine_desc">Deskripsi</string>
+    <string name="detail_medicine">Detail obat</string>
+    <string name="medicine_dosis">Dosis</string>
+    <string name="medicine_manfaat">Manfaat</string>
+    <string name="medicine_efek">Efek Samping</string>
+    <string name="medicine_kategori">Kategori Obat</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+
+
+</resources>
