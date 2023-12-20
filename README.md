@@ -1,1 +1,7 @@
-# Capstone-bangkit
+# MediCare : Medication Detection Application
+![Salinan dari Cream   Pastel Palette Healthcare Center Characters Green variant by Slidesgo pptx](https://github.com/addiagung/Capstone-bangkit/assets/88973245/f7de3f04-8ced-4ed0-a285-eb6192455134)
+Health is a precious asset owned by individuals and the community. The Central Statistics Agency (BPS) states that health is one of the determining indicators of people's quality of life. In an effort to maintain or restore good health, medications play a central role in modern healthcare used to prevent, treat, or manage a variety of medical conditions. A proper understanding of medications and their use is essential to ensure the safety and effectiveness of treatment.
+
+However, limited public understanding of medication usage actually poses challenges and risks of errors such as overdose, unnecessary side effects, and medication usage that is not in accordance with medical instructions. Errors in medication usage can have serious implications for an individual's health and may even lead to broader negative impacts on the healthcare system. Therefore, a solution is needed to assist the community in identifying and understanding the proper and correct usage of medications.
+
+In response to this issue, our application is presented as a solution to help the community identify medications, overcome health issues, maintain the safety of medication usage, and facilitate people in managing their health effectively.
