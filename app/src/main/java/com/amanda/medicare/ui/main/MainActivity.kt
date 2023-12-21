@@ -1,6 +1,6 @@
 package com.amanda.medicare.ui.main
 
-import android.content.Context
+import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -61,18 +61,6 @@ class MainActivity : AppCompatActivity() {
         binding.btnSearch.setOnClickListener{startCari()}
     }
 
-    private fun isOnboardingCompleted(): Boolean {
-        val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
-        return sharedPreferences.getBoolean("onboardingCompleted", false)
-    }
-
-    private fun setOnboardingCompleted() {
-        val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
-        editor.putBoolean("onboardingCompleted", true)
-        editor.apply()
-    }
-
     private fun startCari() {
         val intent = Intent(this, SearchActivity::class.java)
         startActivity(intent)
@@ -80,8 +68,15 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun startCamera() {
-        currentImageUri = getImageUri(this)
-        launcherIntentCamera.launch(currentImageUri)
+        if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+            currentImageUri = getImageUri(this)
+            launcherIntentCamera.launch(currentImageUri)
+        } else {
+            requestPermissions(arrayOf(Manifest.permission.CAMERA), 100)
+        }
+
+        //currentImageUri = getImageUri(this)
+        //launcherIntentCamera.launch(currentImageUri)
     }
 
     private val launcherIntentCamera = registerForActivityResult(
@@ -96,8 +91,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
+
     companion object {
-        private const val REQUIRED_PERMISSION = android.Manifest.permission.CAMERA
+        private const val REQUIRED_PERMISSION = Manifest.permission.CAMERA
     }
 
 }
